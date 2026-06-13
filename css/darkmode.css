@@ -1,0 +1,8 @@
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .card{
+background:#222;
+}
