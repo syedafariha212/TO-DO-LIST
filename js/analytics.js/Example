@@ -1,0 +1,7 @@
+new Chart(ctx,{
+type:"pie",
+data:{
+labels:["Work","Study","Personal"],
+datasets:[{}]
+}
+});
