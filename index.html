@@ -4,91 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Smart Todo Dashboard</title>
+    <title>🚀 TaskVerse AI</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/darkmode.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Smart Todo Dashboard</h1>
+    <h1>🚀 TaskVerse AI</h1>
+
+    <p class="tagline">
+        Your Personal Productivity Command Center
+    </p>
 
     <button id="themeToggle">
-        Dark Mode
+        🌙 Dark Mode
     </button>
 
     <br><br>
-<h1>🚀 TaskVerse AI</h1>
 
-<p id="todayDate"></p>
+    <p id="todayDate"></p>
 
-<input
-id="searchInput"
-placeholder="Search Tasks"
-onkeyup="searchTasks()">
+    <input
+        id="searchInput"
+        placeholder="🔍 Search Tasks"
+        onkeyup="searchTasks()">
 
-<div class="dashboard">
+    <div class="dashboard">
 
-<div class="card">
-<h3>Total Tasks</h3>
-<p id="totalTasks">0</p>
-</div>
+        <div class="card">
+            <h3>📋 Total Tasks</h3>
+            <p id="totalTasks">0</p>
+        </div>
 
-<div class="card">
-<h3>Completed</h3>
-<p id="completedTasks">0</p>
-</div>
+        <div class="card">
+            <h3>✅ Completed</h3>
+            <p id="completedTasks">0</p>
+        </div>
 
-<div class="card">
-<h3>Pending</h3>
-<p id="pendingTasks">0</p>
-</div>
+        <div class="card">
+            <h3>⏳ Pending</h3>
+            <p id="pendingTasks">0</p>
+        </div>
 
-<div class="card">
-<h3>Score</h3>
-<p id="score">0%</p>
-</div>
+        <div class="card">
+            <h3>🔥 Score</h3>
+            <p id="score">0%</p>
+        </div>
 
-</div>
+    </div>
 
-<hr>
+    <hr>
 
-<div id="badge"></div>
+    <div id="badge"></div>
+
+    <h2>🎯 Add New Task</h2>
+
     <input
         id="taskInput"
-        placeholder="Enter task">
+        placeholder="Enter Task">
 
     <button onclick="addTask()">
-        Add Task
+        ➕ Add Task
     </button>
 
     <ul id="taskList"></ul>
 
     <hr>
 
-    <h2>Pomodoro Timer</h2>
+    <div class="card">
 
-    <div id="timer"></div>
+        <h2>⏳ Pomodoro Timer</h2>
 
-    <button onclick="startTimer()">
-        Start
-    </button>
+        <div id="timer">25:00</div>
 
-    <button onclick="resetTimer()">
-        Reset
-    </button>
+        <button onclick="startTimer()">
+            ▶ Start
+        </button>
 
-    <hr>
+        <button onclick="resetTimer()">
+            🔄 Reset
+        </button>
 
-    <button onclick="exportCSV()">
-        Export CSV
-    </button>
+    </div>
 
     <hr>
 
-    <canvas id="taskChart"></canvas>
+    <div class="card">
+
+        <h2>📤 Export Tasks</h2>
+
+        <button onclick="exportCSV()">
+            Download CSV
+        </button>
+
+    </div>
+
+    <hr>
+
+    <div class="card">
+
+        <h2>📊 Productivity Analytics</h2>
+
+        <canvas id="taskChart"></canvas>
+
+    </div>
+
+    <hr>
+
+    <div class="card">
+
+        <h2>💪 Habit Tracker</h2>
+
+        <label>
+            <input type="checkbox">
+            Drink Water
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Read Book
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Exercise
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Meditation
+        </label>
+
+    </div>
+
+    <hr>
+
+    <div class="card">
+
+        <h2>💡 Daily Motivation</h2>
+
+        <p id="quote"></p>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -101,6 +169,7 @@ onkeyup="searchTasks()">
     <script src="js/achievements.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/quotes.js"></script>
 
 </body>
 </html>
