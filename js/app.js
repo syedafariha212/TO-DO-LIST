@@ -54,3 +54,28 @@ function toggleTask(index) {
 }
 
 renderTasks();
+function updateStats(){
+
+const total = tasks.length;
+
+const completed =
+tasks.filter(t => t.completed).length;
+
+const pending =
+total - completed;
+
+const score =
+total === 0
+? 0
+: Math.round((completed/total)*100);
+
+document.getElementById("totalTasks").innerText = total;
+document.getElementById("completedTasks").innerText = completed;
+document.getElementById("pendingTasks").innerText = pending;
+document.getElementById("score").innerText = score + "%";
+
+if(typeof checkAchievements === "function"){
+checkAchievements();
+}
+
+}
