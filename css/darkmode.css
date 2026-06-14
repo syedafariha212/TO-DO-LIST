@@ -1,15 +1,17 @@
 .dark{
-background:#111;
-color:white;
+    background:#111 !important;
+    color:white;
 }
 
-.dark button{
-background:#333;
-color:white;
+.dark .card{
+    background:rgba(0,0,0,.4);
 }
 
 .dark input{
-background:#222;
-color:white;
-border:1px solid #555;
+    background:#222;
+    color:white;
+}
+
+.dark button{
+    background:#333;
 }
