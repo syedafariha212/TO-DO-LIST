@@ -1,8 +1,19 @@
-Layout
-Cards
-Buttons
-Task List
-Forms
-Analytics
-Timer
-Responsive Design
+body{
+font-family:Arial,sans-serif;
+padding:20px;
+}
+
+button{
+padding:10px;
+margin:5px;
+cursor:pointer;
+}
+
+input{
+padding:10px;
+width:250px;
+}
+
+li{
+margin:10px 0;
+}
