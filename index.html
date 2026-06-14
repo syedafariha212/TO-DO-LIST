@@ -1,8 +1,66 @@
-Navbar
-Stats Cards
-Task Form
-Task List
-Analytics Section
-Pomodoro Timer
-Quote Section
-Footer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Todo Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+</head>
+
+<body>
+
+    <h1>Smart Todo Dashboard</h1>
+
+    <button id="themeToggle">
+        Dark Mode
+    </button>
+
+    <br><br>
+
+    <input
+        id="taskInput"
+        placeholder="Enter task">
+
+    <button onclick="addTask()">
+        Add Task
+    </button>
+
+    <ul id="taskList"></ul>
+
+    <hr>
+
+    <h2>Pomodoro Timer</h2>
+
+    <div id="timer"></div>
+
+    <button onclick="startTimer()">
+        Start
+    </button>
+
+    <button onclick="resetTimer()">
+        Reset
+    </button>
+
+    <hr>
+
+    <button onclick="exportCSV()">
+        Export CSV
+    </button>
+
+    <hr>
+
+    <canvas id="taskChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/export.js"></script>
+    <script src="js/analytics.js"></script>
+
+</body>
+</html>
