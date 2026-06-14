@@ -19,7 +19,42 @@
     </button>
 
     <br><br>
+<h1>🚀 TaskVerse AI</h1>
 
+<p id="todayDate"></p>
+
+<input
+id="searchInput"
+placeholder="Search Tasks"
+onkeyup="searchTasks()">
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Total Tasks</h3>
+<p id="totalTasks">0</p>
+</div>
+
+<div class="card">
+<h3>Completed</h3>
+<p id="completedTasks">0</p>
+</div>
+
+<div class="card">
+<h3>Pending</h3>
+<p id="pendingTasks">0</p>
+</div>
+
+<div class="card">
+<h3>Score</h3>
+<p id="score">0%</p>
+</div>
+
+</div>
+
+<hr>
+
+<div id="badge"></div>
     <input
         id="taskInput"
         placeholder="Enter task">
